@@ -18,6 +18,20 @@
       "es2016",
       "dom"
     ],
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@env/*": [
+        "environments/*"
+      ]
+    },
     "module": "esnext"
   }
 }
