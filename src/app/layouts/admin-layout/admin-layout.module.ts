@@ -6,9 +6,9 @@ import { FormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
 import { UserComponent }            from '../../pages/user/user.component';
-import { TableComponent }           from '../../pages/table/table.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarComponent } from 'app/pages/car/car.component';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   declarations: [
     UserComponent,
-    TableComponent,
+    CarComponent,
   ]
 })
 
