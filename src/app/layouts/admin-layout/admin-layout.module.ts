@@ -5,22 +5,28 @@ import { FormsModule } from '@angular/forms';
 
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
-import { UserComponent }            from '../../pages/user/user.component';
+import { UserComponent } from '../../pages/user/user.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarComponent } from 'app/pages/car/car.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { FormCarModule } from 'components/form-car/form-car.module';
+import { UtilitiesService } from '@services/utilities/utilities.service';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
-    NgbModule
+    NgbModule,
+    TranslateModule,
+    FormCarModule
   ],
   declarations: [
     UserComponent,
     CarComponent,
-  ]
+  ],
+  providers: [UtilitiesService],
 })
 
 export class AdminLayoutModule {}

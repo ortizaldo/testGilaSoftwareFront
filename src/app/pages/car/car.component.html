@@ -4,7 +4,9 @@
       <div class="card-header">
         <div class="row">
           <div class="col-4">
-            <h4 class="card-title">Lista de vehiculos</h4>
+            <h4 class="card-title">
+                {{ 'car.headingList' | translate }}
+            </h4>
           </div>
           <div class="col-8 w-100 justify-content-end text-right">
             <div class="row">
@@ -20,22 +22,22 @@
           <table class="table">
             <thead class=" text-primary">
               <th scope="col">
-                Nombre
+                {{ 'car.tableCols.carName' | translate }}
               </th>
               <th scope="col">
-                Tipo
+                {{ 'car.tableCols.typeCar' | translate }}
               </th>
               <th scope="col">
-                # Llantas
+                {{ 'car.tableCols.reels' | translate }}
               </th>
               <th scope="col">
-                HP
+                {{ 'car.tableCols.enginePower' | translate }}
               </th>
               <th scope="col">
-                Motor
+                {{ 'car.tableCols.motor' | translate }}
               </th>
               <th scope="col">
-                Color
+                {{ 'car.tableCols.color' | translate }}
               </th>
               <th ></th>
             </thead>

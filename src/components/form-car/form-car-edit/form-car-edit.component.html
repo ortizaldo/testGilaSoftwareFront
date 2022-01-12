@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-12">
+    <form [formGroup]="formGroup" #htmlForm="ngForm" class="form-horizontal">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group" [customErrorMessages]="customErrorMessages">
+            <label class="col-form-label-sm text-gray ml-3">
+              {{ "car.formControl.carName" | translate }} *:
+            </label>
+            <input class="form-control" type="text" placeholder="" formControlName="carName" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group" [customErrorMessages]="customErrorMessages">
+            <label class="col-form-label-sm text-gray ml-3">
+              {{ "car.formControl.reels" | translate }} *:
+            </label>
+            <input class="form-control" type="text" placeholder="" formControlName="reels" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group" [customErrorMessages]="customErrorMessages">
+            <label class="col-form-label-sm text-gray ml-3">
+              {{ "car.formControl.enginePower" | translate }} *:
+            </label>
+            <input class="form-control" type="text" placeholder="" formControlName="enginePower" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group" [customErrorMessages]="customErrorMessages">
+            <label class="col-form-label-sm text-gray ml-3">
+              {{ "car.formControl.motor" | translate }} *:
+            </label>
+            <input class="form-control" type="text" placeholder="" formControlName="motor" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group" [customErrorMessages]="customErrorMessages">
+            <label class="col-form-label-sm text-gray ml-3">
+              {{ "car.formControl.color" | translate }} *:
+            </label>
+            <input class="form-control" type="text" placeholder="" formControlName="color" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-0 modal-footer">
+        <div class="left-side">
+          <button type="button" class="btn btn-link" aria-label="Close" (click)="activeModal.close()">
+            {{ "car.formControl.cancel" | translate }}
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="right-side">
+          <button class="btn btn-info" type="submit">
+            <svg-icon name="save" class="svg-small mr-2"></svg-icon>
+            {{ "car.formControl.save" | translate }}
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

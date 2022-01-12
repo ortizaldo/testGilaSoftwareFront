@@ -40,6 +40,8 @@ export class ModalContentComponent implements OnInit {
       for (let [key, value] of Object.entries(this.contentData)) {
         cmpRef.instance[key] = value;
       }
+
+      cmpRef.instance.activeModal = this.activeModal;
       cmpRef.hostView.detectChanges();
     }
   }

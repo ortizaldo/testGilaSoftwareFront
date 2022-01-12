@@ -14,7 +14,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { NgxMaskModule } from "ngx-mask";
+import { MaskApplierService, MaskService, NgxMaskModule } from "ngx-mask";
 import { TranslateLoader, TranslateModule, TranslateService } from "@ngx-translate/core";
 import { from, Observable } from "rxjs";
 import { environment } from "@env/environment";
@@ -43,6 +43,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgxMaskModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -53,7 +54,10 @@ export class WebpackTranslateLoader implements TranslateLoader {
     ModalContentModule
   ],
   providers: [
-    UtilitiesService
+    {
+      provide: MaskService,
+      useClass: MaskApplierService,
+    },
   ],
   bootstrap: [AppComponent]
 })

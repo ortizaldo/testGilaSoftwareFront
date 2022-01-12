@@ -6,6 +6,7 @@ import { NgbCalendar, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateService } from "@ngx-translate/core";
 import { Alerts } from "@services/alerts/alerts.service";
 import { ApiResponses } from "@services/api-responses/api-responses.service";
+import { FormCarEditComponent } from "components/form-car/form-car-edit/form-car-edit.component";
 import { ModalContentComponent } from "components/modal-content/modal-content/modal-content.component";
 import { forkJoin } from "rxjs";
 import { map } from "rxjs/operators";
@@ -66,19 +67,19 @@ export class CarComponent implements OnInit {
         providers: [
           {
             provide: "contentComponent",
-            useValue: null,
+            useValue: FormCarEditComponent,
           },
           {
             provide: "contentData",
             useValue: {
-              travelOrders: event,
+              data: null,
               isModal: true,
             },
           },
         ],
       }),
     });
-    modalRef.componentInstance.title = "menu.travelAssignment";
+    modalRef.componentInstance.title = "car.headingNew";
     modalRef.result.then(
       (result) => {
         // this.clearSelection();
