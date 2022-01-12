@@ -1,0 +1,1894 @@
+{
+  "app": {
+    "welcome": "Welcome",
+    "newPassword": "You need to set a new password for your account",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "update": "Update",
+    "success": "Success",
+    "updated": "Your password has been updated",
+    "passwordError": "Error in passwords",
+    "passwordErrorText": "Please include an 8 minimum length password and make sure both passwords match",
+    "buttons": {
+      "cancel": "Cancel",
+      "ok": "OK",
+      "close": "Close",
+      "save": "Save",
+      "add": "Add",
+      "download": "Download"
+    },
+    "catalogs": {
+      "yesNo": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "data": {
+        "notFound": "No data"
+      }
+    },
+    "errors": {
+      "default": {
+        "title": "Error",
+        "message": "An unexpected error occurred, please try again"
+      }
+    },
+    "modules": {
+      "client": "Client",
+      "permitHolder": "Permit holder",
+      "locality": "Locations",
+      "supplier": "Suppliers",
+      "personal": "Employees",
+      "unit": "Unity",
+      "trailer": "Trailer"
+    }
+  },
+  "customErrors": {
+    "required": "This field is required",
+    "requiredShort": "Required",
+    "email": "Invalid email",
+    "rfc": "This RFC is already registered in the system",
+    "invalidMask": "Invalid value"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "profiles": "Profiles",
+    "userSecurity": "Security profiles",
+    "myProfile": "My profile",
+    "system": "Back to system",
+    "lang": "Language",
+    "signOut": "Sign out",
+    "admin": "Admin",
+    "customers": "Customers",
+    "catalog": "Catalogs",
+    "edition": "Edition",
+    "units": "Units",
+    "trailers": "Trailers",
+    "permitHolder": "Licensees",
+    "supplier": "Suppliers",
+    "locality": "Locations",
+    "personal": "Employees"
+  },
+  "middlewares": {
+    "notFound": "The route doesn't exists",
+    "notLogged": "You need to login first"
+  },
+  "public": {
+    "general": {
+      "navbar": {
+        "title": {
+          "desktop": "Welcome to Routeks",
+          "mobile": "Welcome to Routeks Mobile"
+        },
+        "languaje": "Languajes",
+        "signIn": "Sign-In"
+      },
+      "footer": {
+        "us": "Know us",
+        "contact": "Contact",
+        "privacy": "Notice of Privacy",
+        "terms": "Terms and Conditions",
+        "brand": "Routeks",
+        "developed": "Developed by",
+        "developedBy": "GLM Solutions S.A de C.V"
+      },
+      "sidebar": {
+        "sidebarIn": "Sidebar mini activated...",
+        "sidebarOut": "Sidebar mini deactivated..."
+      },
+      "forms": {
+        "title": "Invalid Information",
+        "message": "Please fill all fields",
+        "write_here": "Write here",
+        "success": {
+          "create": "{{value}} saved",
+          "edit": "{{value}} updated",
+          "delete": "{{value}} deleted"
+        }
+      },
+      "formsWithOutSave": {
+        "title": "Modified data",
+        "message": "Do you want to exit without saving changes?"
+      },
+      "formsWithOutPSave": {
+        "title": "Modified image",
+        "message": "You want to save profile changes without saving the profile image?"
+      }
+    },
+    "login": {
+      "welcome": "Welcome",
+      "cardTitle": "Login with your email",
+      "cardTitleMultiaccounts": "Select an account to continue",
+      "form": {
+        "email": "Email",
+        "password": "Password",
+        "signIn": "Sign in",
+        "register": "Register with code",
+        "requeridFields": "* Required Fields"
+      },
+      "forgotPassword": "Forgot my password",
+      "cancelMultiaccounts": "Cancel"
+    },
+    "signUp": {
+      "cardTitle": "Register",
+      "register": "Create account",
+      "signIn": "Go to login",
+      "signupSuccessTitle": "Signup complete",
+      "signupSuccessMessage": "Please go to login with your new account",
+      "form": {
+        "name": "Name",
+        "code": "Code",
+        "lastname": "Lastname",
+        "surname": "Surname",
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "passwordConfirm": "Confirm password"
+      },
+      "formErrors": {
+        "required": "This field is required",
+        "name": "Name is required",
+        "code": "Code is required",
+        "lengthCodeError": "6 characters",
+        "OnlyNumbers": "Only numbers",
+        "InvalidCharacters": "Invalid characters",
+        "lastname": "Lastname is required",
+        "username": "Username is required",
+        "email": "Introduce a valid email",
+        "password": "Use a minimum 8 characters",
+        "invalidPasswords": "Passwords doesn't match",
+        "invalidLengthPassword": "Password must be at least 8 characters"
+      }
+    },
+    "recoveryPassword": {
+      "heading": "Recover your password",
+      "headingRestorePassword": "Restore password",
+      "email": "Email",
+      "invalidEmail": "Please type a valid email",
+      "haveCode": "I have a code",
+      "login": "Go to login",
+      "send": "Send email",
+      "emailSentTitle": "Email sent",
+      "emailSentMessage": "Please check your email and follow the instructions"
+    },
+    "resetPassword": {
+      "heading": "Enter your new password",
+      "password": "Password",
+      "passwordConfirm": "Confirm password",
+      "lengthError": "Use a minimum 8 characters",
+      "lengthCodeError": "6 characters",
+      "OnlyNumbers": "Only numbers",
+      "invalid": "Passwords doesn't match",
+      "login": "Go to login",
+      "reset": "Reset",
+      "resetPasswordSuccessTitle": "Password reset",
+      "resetPasswordSuccessMessage": "Login with your new password",
+      "resetPasswordInvalidParamsTitle": "Incorrect parameters",
+      "resetPasswordInvalidParamsMessage": "You first need to request the password change to access this resource",
+      "email": "Email",
+      "invalidEmail": "Please type a valid email",
+      "code": "Validation Code",
+      "codeRequired": "Validation code is required"
+    },
+    "changePassword": {
+      "changePasswordSuccessTitle": "Password updated",
+      "changePasswordSuccessMessage": "The password has been changed successfully"
+    }
+  },
+  "private": {
+    "permitHolder": {
+      "heading": "List of permisionarios",
+      "new": {
+        "title": "Create permisionario"
+      },
+      "edit": {
+        "title": "Edit permisionario"
+      },
+      "read": {
+        "title": "Details permisionario"
+      },
+      "tableCols": {
+        "name": "Name",
+        "clientType": "Type of permisionario",
+        "rfc": "RFC",
+        "firstName": "Names",
+        "fatherLastName": "Father's last Name",
+        "motherLastName": "Mother's last name",
+        "businessName": "Business name",
+        "email": "Email",
+        "createdAt": "Fecha de creación"
+      },
+      "form": {
+        "clientType": "Type of permisionario",
+        "rfc": "RFC",
+        "businessName": "Business name",
+        "firstName": "Names",
+        "fatherLastName": "Father's last Name",
+        "motherLastName": "Mother's last name",
+        "email": "Email",
+        "code": "Plant code",
+        "alias": "Alias",
+        "phone": "Phone Number",
+        "fax": "Fax",
+        "address": {
+          "street": "Street",
+          "numberExt": "Outdoor Number",
+          "numberInt": "Indoor Number",
+          "suburb": "Colonia",
+          "postalCode": "Postal code",
+          "country": "Country",
+          "municipality": "Municipality",
+          "state": "Estate",
+          "population": "Population",
+          "delegation": "Delegation"
+        },
+        "iva": "IVA",
+        "term": "Term",
+        "creditDays": "Credit days",
+        "typeRetention": "Retention type",
+        "creditLimit": "Credit limit",
+        "turn": "Commercial business",
+        "currency": "Currency",
+        "billingPeriod": "Billing Period",
+        "billingReception": "Invoice reception mode",
+        "billingDaysReception": "Invoice receipt days",
+        "billingDaysLimit": "Billing limit days",
+        "salesVolume": "Sales volume",
+        "referenceNumber": "# reference",
+        "maxDailyAmount": "Maximum daily amount delay",
+        "costPerHourDelay": "Cost per hour delay",
+        "timeLimitDelay": "Time limit delay",
+        "bankAccount": "Bank account",
+        "bank": "Bank",
+        "paymentMethod": "Payment method",
+        "paymentWay": "Way to pay",
+        "cfdi": "Use CFDI",
+        "typeSale": "Type of sale"
+      },
+      "section": {
+        "general": "General data",
+        "address": "Direction",
+        "account": "Bank data",
+        "contacts": "Contacts",
+        "responsibles": "Officials",
+        "accounts": "Bank Accounts",
+        "details": "Observations"
+      },
+      "selectOptions": {
+        "persons": {
+          "personal": "Physical",
+          "business": "Moral"
+        },
+        "term": {
+          "credit": "Credit",
+          "debit": "Debit"
+        },
+        "typeRetention": {
+          "freight": "Freight",
+          "retention": "Retention"
+        },
+        "currency": {
+          "peso": "Peso",
+          "dollar": "Dollar",
+          "euro": "Euro"
+        },
+        "billingPeriod": {
+          "daily": "Diary",
+          "weekly": "Weekly",
+          "biweekly": "Biweekly",
+          "monthly": "Monthly",
+          "perTrip": "Per trip"
+        },
+        "billingReception": {
+          "portal": "Portal",
+          "email": "Mail",
+          "signature": "Company"
+        },
+        "billingDaysReception": {
+          "sunday": "Sunday",
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday"
+        },
+        "saleType": {
+          "perTrip": "Per trip",
+          "perKilometers": "Per kilometer"
+        }
+      },
+      "actions": {
+        "edit": "Edit permisionario",
+        "delete": {
+          "title": "Remove permisionario",
+          "question": "You want to remove the permisionario?",
+          "many": "Remove permisionarios",
+          "manyQuestion": "You want to remove the permisionarios?"
+        },
+        "cancel": "Cancel",
+        "emptyElements": "No items have been selected to delete!",
+        "withoutPermissions": "You do not have permissions to remove permisionarios!"
+      },
+      "navigation": {
+        "general": "General data",
+        "address": "Direction",
+        "bank": "Bank data",
+        "contacts": "Contacts ",
+        "details": "Observations",
+        "responsibles": "Officials"
+      },
+      "buttons": {
+        "view": "Watch permisionario",
+        "new": "New permisionario"
+      }
+    },
+    "locality": {
+      "heading": "List of locations",
+      "new": {
+        "title": "Create location"
+      },
+      "edit": {
+        "title": "Edit location"
+      },
+      "read": {
+        "title": "Location Details"
+      },
+      "tableCols": {
+        "nombreLocalidad": "Location",
+        "country": "Country",
+        "state": "State",
+        "municipality": "Municipality",
+        "latitud": "Latitude",
+        "longitud": "Length",
+        "createdAt": "Creation date"
+      },
+      "form": {
+        "nombreLocalidad": "Location",
+        "country": "Country",
+        "state": "State",
+        "municipality": "Municipality",
+        "latitud": "Latitude",
+        "longitud": "Length"
+      },
+      "formErrors": {
+        "required": "This field is required",
+        "OnlyNumbers": "Incorrect number format"
+      },
+      "section": {
+        "address": "Location"
+      },
+      "actions": {
+        "edit": "Edit Location",
+        "delete": {
+          "title": "Remove Town",
+          "question": "Do you want to remove the location?",
+          "many": "Remove Locations",
+          "manyQuestion": "Do you want to delete the locations?"
+        },
+        "cancel": "Cancel",
+        "emptyElements": "No items have been selected to delete!",
+        "withoutPermissions": "You do not have permissions to remove locations!"
+      },
+      "navigation": {
+        "address": "Locations"
+      },
+      "buttons": {
+        "view": "See location",
+        "new": "New location"
+      }
+    },
+    "supplier": {
+      "heading": "List of suppliers",
+      "new": {
+        "title": "Create Suppliers "
+      },
+      "edit": {
+        "title": "Edit Suppliers "
+      },
+      "read": {
+        "title": "Supplier Details "
+      },
+      "tableCols": {
+        "supplierNumber": "# Provider",
+        "clientType": "Kind of person",
+        "name": "Name",
+        "supplier": "Provider",
+        "supplierType": "Type of supplier",
+        "rfc": "RFC",
+        "firstName": "Name(s)",
+        "fatherLastName": "Last name",
+        "motherLastName": "Mother's last name",
+        "businessName": "Business name",
+        "email": "Email",
+        "createdAt": "Creation date"
+      },
+      "form": {
+        "supplierType": "Type of supplier",
+        "proveedor": "Provider",
+        "rfc": "RFC",
+        "businessName": "Business name",
+        "firstName": "Names",
+        "fatherLastName": "Last name",
+        "motherLastName": "Mother's last name",
+        "email": "Email",
+        "alias": "Alias",
+        "phone": "Phone",
+        "cellphone": "Cell phone",
+        "web": "Web page",
+        "fax": "Fax",
+        "address": {
+          "street": "Street",
+          "numberExt": "Outdoor Number",
+          "numberInt": "Interior number",
+          "suburb": "Suburb",
+          "postalCode": "Postal Code",
+          "country": "country",
+          "municipality": "Municipality",
+          "state": "State",
+          "population": "Population",
+          "delegation": "Delegation"
+        },
+        "iva": "VAT",
+        "term": "Term",
+        "creditDays": "Credit days",
+        "typeRetention": "Retention type",
+        "creditLimit": "Credit limit",
+        "active": "Status",
+        "withdrawnAt": "Discharge date",
+        "joinedAt": "Date of admission",
+        "lastPurchasedAt": "Last Date purchase",
+        "servPostVenta": "Serv. Post-sale",
+        "contactCXC": "Accounts receivable contact",
+        "paymentCondition": "Payment condition",
+        "currency": "Currency",
+        "discount": "% Discount",
+        "save": "save"
+      },
+      "formErrors": {
+        "required": "This field is required",
+        "OnlyNumbers": "Wrong Number Format"
+      },
+      "section": {
+        "general": "General data",
+        "address": "Direction",
+        "fiscalData": "Fiscal Data ",
+        "details": "Observations",
+        "documents": "Documentation"
+      },
+      "selectOptions": {
+        "persons": {
+          "personal": "Physical",
+          "business": "Moral"
+        },
+        "estatus": {
+          "active": "Active",
+          "inactive": "Low"
+        }
+      },
+      "actions": {
+        "edit": "Edit Suppliers",
+        "delete": {
+          "title": "Delete Suppliers",
+          "question": "Do you want to delete the Suppliers?",
+          "many": "Delete Suppliers",
+          "manyQuestion": "¿Desea eliminar las Proveedores?"
+        },
+        "cancel": "Cancel",
+        "emptyElements": "No items have been selected to delete! ",
+        "withoutPermissions": "You do not have permissions to remove locations!"
+      },
+      "navigation": {
+        "general": "General data",
+        "address": "Direction",
+        "fiscalData": "Fiscal Data ",
+        "details": "Observations",
+        "documents": "Documentation"
+      },
+      "buttons": {
+        "view": "See Suppliers ",
+        "new": "New Suppliers "
+      },
+      "addressProof": {
+        "title": "Proof of address"
+      },
+      "ineProof": {
+        "title": "INE"
+      },
+      "nrVehicularProof": {
+        "title": "Letter of no vehicle theft"
+      },
+      "satFulfillmentProof": {
+        "title": "Compliance opinion"
+      },
+      "curpProof": {
+        "title": "CURP"
+      },
+      "companyCharterProof": {
+        "title": "Constitutive Act"
+      },
+      "notarialCertificateProof": {
+        "title": "Power of attorney"
+      }
+    }
+  },
+  "admin": {
+    "users": {
+      "heading": "Users list",
+      "tableCols": {
+        "name": "Name",
+        "lastname": "Lastname",
+        "email": "Email",
+        "phone": "Phone",
+        "disabled": "Disabled",
+        "fullname": "Fullname",
+        "profile": "Profile",
+        "role": "Role",
+        "securityProfile": "Security profile",
+        "createdAt": "Created At"
+      },
+      "alerts": {
+        "delete": {
+          "title": "Are you sure?",
+          "text": "User will be deleted",
+          "cancelAction": "Close"
+        }
+      },
+      "deleted": "Deleted complete",
+      "userEditedTitle": "User updated",
+      "userDeletedTitle": "User Deleted",
+      "actions": {
+        "delete": {
+          "deleteUser": "Delete user",
+          "deleteAsk": "Are you sure you delete the user?"
+        },
+        "deleteTitleMany": "Delete Users",
+        "deleteAskMany": "Are you sure you delete the Users?",
+        "emptyElements": "No items have been selected to delete!",
+        "withoutPermissions": "You do not have permissions to delete users!"
+      },
+      "cancel": "Cancel",
+      "buttons": {
+        "viewUser": "View User",
+        "newUser": "User New"
+      }
+    },
+    "profiles": {
+      "heading": "Profiles",
+      "headingRead": "Profile",
+      "profileDetail": {
+        "headingNew": "New profile",
+        "headingEdit": "Edit profile",
+        "headingDetails": "Details",
+        "headingPermissions": "Permissions",
+        "formControl": {
+          "name": "Name",
+          "role": "Role",
+          "active": "Active"
+        },
+        "formControlError": {
+          "nameRequired": "Profile name is required",
+          "roleRequired": "Role is required"
+        },
+        "tablePermissions": {
+          "columns": {
+            "module": "Module",
+            "read": "Read",
+            "create": "Create",
+            "edit": "Edit",
+            "delete": "Delete"
+          }
+        },
+        "profileSavedTitle": "Profile saved",
+        "profileEditedTitle": "Profile edited",
+        "profileDeletedTitle": "Profile Deleted",
+        "actions": {
+          "deleteTitle": "Delete profile",
+          "deleteAsk": "Do you want to delete the user?"
+        },
+        "cancel": "Cancel"
+      },
+      "tableCols": {
+        "name": "Name",
+        "role": "Role",
+        "activeText": "Active",
+        "active": "Active",
+        "createdAt": "Creation date"
+      },
+      "actions": {
+        "close": "Close",
+        "edit": "Edit profile",
+        "delete": "Delete profile",
+        "deleteMany": "Delete profiles",
+        "deleted": "Profile deleted!",
+        "deletedMany": "Profiles deleted!",
+        "deleteTitle": "Delete profile",
+        "deleteTitleMany": "Delete profiles",
+        "deleteAsk": "Are you sure you delete the profile?",
+        "deleteAskMany": "Are you sure you delete the profiles?",
+        "cancel": "Cancel",
+        "emptyElements": "No items have been selected to delete!",
+        "withoutPermissions": "You do not have permissions to delete profiles!"
+      },
+      "buttons": {
+        "viewProfile": "View profile",
+        "newProfile": "New profile"
+      }
+    },
+    "userSecurity": {
+      "heading": "Security profiles",
+      "headingRead": "Security profile detail",
+      "tableCols": {
+        "name": "Name",
+        "active": "Active",
+        "createdAt": "Creation date"
+      },
+      "detail": {
+        "headingNew": "New security profile",
+        "headingEdit": "Edit security profile",
+        "headingDetails": "Details",
+        "headingBySchedule": "Schedule",
+        "headingByIp": "IP addresses",
+        "addIpTitle": "Add IP",
+        "addIpText": "Capture the IP address. If you want to restrict a network segment, capture the IP address next to the netmask",
+        "ip": "Ej: 192.168.0.10/24",
+        "netmask": "Net mask (Optional)",
+        "ipInvalidTitle": "Invalid IP address",
+        "ipInvalidMessage": "Please capture a valid IP address",
+        "created": "Security profile created",
+        "updated": "Security profile updated",
+        "ipAddedTitle": "Address saved",
+        "ipAddedText": "The IP address has been saved successfully. To save the changes made, press the Save button",
+        "ipDeletedTitle": "Address deleted",
+        "ipDeletedText": "The IP address has been deleted successfully. To save the changes made, press the Save button",
+        "ipDuplicatedTitle": "Duplicate address",
+        "ipDuplicatedText": "The IP address you are trying to add already exists",
+        "formControl": {
+          "name": "Name",
+          "restrictedBy": "Restricted by",
+          "restrictedBySchedule": "Schedule",
+          "restrictedByIp": "IP",
+          "active": "Active"
+        },
+        "formControlError": {
+          "nameRequired": "Name is required",
+          "scheduleInvalidTitle": "Invalid Hours",
+          "scheduleInvalidText": "Be sure to correctly capture the configured schedules on the day: ",
+          "scheduleInvalidTextSDay": "Missing select start time on the day: ",
+          "scheduleInvalidTextEDay": "Missing select end time on the day: ",
+          "scheduleInvalidTextSEDay": "Missing select start and end time on the day: "
+        },
+        "scheduleColumns": {
+          "day": "Day",
+          "enabled": "Enabled",
+          "allDay": "All day",
+          "start": "Start Time",
+          "end": "End Time"
+        },
+        "ipColumns": {
+          "ip": "Ip address",
+          "netmask": "Netmask"
+        },
+        "scheduleDays": {
+          "day": "Day",
+          "enabled": "Enabled",
+          "allDay": "All day",
+          "start": "Start",
+          "end": "End"
+        },
+        "daysOfWeek": {
+          "0": "Sunday",
+          "1": "Monday",
+          "2": "Tuesday",
+          "3": "Wednesday",
+          "4": "Thursday",
+          "5": "Friday",
+          "6": "Saturday"
+        }
+      },
+      "actions": {
+        "close": "Close",
+        "edit": "Edit security profile",
+        "delete": {
+          "deleted": "Security profile deleted!",
+          "ipDeleted": "Ip address deleted!",
+          "delete": "Delete security profile",
+          "deleteTitle": "Delete",
+          "deleteText": "Are you sure you delete the security profile?",
+          "deleteTextMany": "Are you sure you delete the security profiles?",
+          "deleteIpText": "Are you sure you delete the ip address?"
+        },
+        "emptyElements": "No items have been selected to delete!",
+        "withoutPermissions": "You do not have permissions to delete security profiles!",
+        "add": {
+          "ip": "Add Ip"
+        }
+      },
+      "buttons": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "accept": "Accept",
+        "viewSecurityProfile": "View profile",
+        "newSecurityProfile": "New profile"
+      }
+    },
+    "catalog": {
+      "heading": "Catalog",
+      "titleCatalog": {
+        "unitType": "Unit Types",
+        "unidades": "Units",
+        "status": "Types of Status",
+        "trailerType": "Trailer Types",
+        "motiveType": "Reason Types",
+        "lineType": "Types of Lines",
+        "commercialBusiness": "Types of Commercial Business",
+        "fleetType": "Fleet types",
+        "tconceptos": "Types of Concepts",
+        "additionalAccessoryType": "Types of Additional Accessories",
+        "fuelType": "Types of Fuel",
+        "operationType": "Types of Operation",
+        "modelType": "Types of Models",
+        "brandType": "Brands",
+        "departmentType": "Types of Departments",
+        "programmingType": "Types of Schedules",
+        "country": "Countries",
+        "testados": "Estates",
+        "municipality": "Municipalities or Delegations",
+        "tbancos": "Banks",
+        "tmpagos": "Payment methods",
+        "tfpagos": "Payment Methods",
+        "tcfdi": "CFDI",
+        "personalType": "Staff category",
+        "maintenanceType": "Types of Maintenance",
+        "maintenanceReasonType": "Reasons for Maintenance",
+        "routeType": "Types of Routes",
+        "representativeType": "Types of Representatives",
+        "tpatios": "Patios"
+      },
+      "tableCols": {
+        "country": "Country",
+        "state": "Estate",
+        "clave": "Key",
+        "claveTexto": "Key Text",
+        "noconcepto": "No. concept",
+        "iva": "% VAT",
+        "retencion": "% Retention",
+        "tipo": "Ascertainable?",
+        "description": "Description",
+        "direccion": "Address",
+        "unidad": "Unit",
+        "remolque": "Trailer",
+        "img": "Picture",
+        "active": "Active",
+        "createdAt": "Creation date",
+        "actions": "Actions"
+      },
+      "alerts": {
+        "deleteTitle": "Delete",
+        "deleteUnitType": "Remove Unit Type",
+        "deleteAskUnitType": "Do you want to remove the type of unit?",
+        "deleteStatus": "Remove status type",
+        "deleteAskStatus": "Do you want to remove the type of status?",
+        "deleteTrailerType": "Remove the type of trailer",
+        "deleteAskTrailerType": "Do you want to eliminate the type of trailer?",
+        "deleteMotiveType": "Delete reason type",
+        "deleteAskMotiveType": "Do you want to delete the type of motive?",
+        "deleteLineType": "Remove line type",
+        "deleteAskLineType": "Do you want to delete the type of line?",
+        "deleteCommercialBusiness": "Remove the type of business line",
+        "deleteAskCommercialBusiness": "Do you want to eliminate the type of business line?",
+        "deleteFleetType": "Remove Fleet Type",
+        "deleteAskFleetType": "¿Desea eliminar el tipo de flota?",
+        "deleteTConcepto": "Remove Concept Type",
+        "deleteAskTConcepto": "Do you want to eliminate the type of concept?",
+        "deleteAdditionalAccessoryType": "Remove Additional Accessory Type",
+        "deleteAskAdditionalAccessoryType": "Do you want to remove the type of additional accessory?",
+        "deleteFuelType": "Remove Fuel Type",
+        "deleteAskFuelType": "Do you want to eliminate the type of fuel?",
+        "deleteOperationType": "Remove Operation Type",
+        "deleteAskOperationType": "Do you want to eliminate the type of operation?",
+        "deleteTModelos": "Remove Model Type",
+        "deleteAskTModelos": "Do you want to remove the type of model?",
+        "deleteBrandType": "Remove brand",
+        "deleteAskBrandType": "¿Do you want to remove the brand?",
+        "deleteDepartmentType": "Remove Department Type",
+        "deleteAskDepartmentType": "Do you want to eliminate the type of department?",
+        "deleteProgrammingType": "Delete Programming Type",
+        "deleteAskProgrammingType": "Do you want to delete the type of programming?",
+        "deleteCountry": "Remove Countries",
+        "deleteAskCountry": "Do you want to eliminate the country?",
+        "deleteState": "Delete Estates",
+        "deleteAskState": "Do you want to delete the estate?",
+        "deleteMunicipality": "Remove Municipalities",
+        "deleteAskMunicipality": "Do you want to eliminate the municipality?",
+        "deleteMPagos": "Remove payment methods",
+        "deleteAskMPagos": "Do you want to eliminate the payment method?",
+        "deleteFPagos": "Delete payment methods",
+        "deleteAskFPagos": "Do you want to delete the payment method?",
+        "deleteBanks": "Delete banks",
+        "deleteAskBanks": "Do you want to delete the bank?",
+        "deleteCFDI": "Delete CFDI's",
+        "deleteAskCFDI": "Do you want to eliminate the CFDI?",
+        "deletePersonalType": "Remove Personnel Categories",
+        "deleteAskPersonalType": "Do you want to delete the type of category?",
+        "deleteMaintenanceReasonType": "Remove Maintenance Types",
+        "deleteAskMaintenanceReasonType": "Do you want to eliminate the type of maintenance?",
+        "deleteTRMantenimiento": "Remove Maintenance Reasons",
+        "deleteAskTRMantenimiento": "Do you want to eliminate the type of maintenance reason?",
+        "deleteRouteType": "Delete Routes",
+        "deleteAskRouteType": "Do you want to remove the types of routes?",
+        "deleteTRepresentantes": "Remove Representatives",
+        "deleteAskTRepresentantes": "Do you want to eliminate the types of representatives?",
+        "deletePatios": "Remove Patios",
+        "deleteAskPatios": "Do you want to remove the yard?",
+        "deleteSuccesful": "Registry deleted."
+      },
+      "alertsDuplicate": {
+        "duplicateTitle": "Duplicate",
+        "duplicateUnitType": "Duplicated unit Type",
+        "duplicateAskUnitType": "Type of unit already registered.",
+        "duplicateStatus": "Duplicated status type",
+        "duplicateAskStatus": "Type of status already registered.",
+        "duplicateTrailerType": "Duplicated type of trailer",
+        "duplicateAskTrailerType": "Type of trailer already registred.",
+        "duplicateMotiveType": "Duplicated reason type",
+        "duplicateAskMotiveType": "Type of motive already registred.",
+        "duplicateLineType": "Duplicated line type",
+        "duplicateAskLineType": "Type of line already registred.",
+        "duplicateCommercialBusiness": "Duplicated the type of business line",
+        "duplicateAskCommercialBusiness": "Type of business line already registred.",
+        "duplicateFleetType": "Duplicated Fleet Type",
+        "duplicateAskFleetType": "¿Desea eliminar el tipo de flota?",
+        "duplicateTConcepto": "Duplicated Concept Type",
+        "duplicateAskTConcepto": "Type of concept already registred.",
+        "duplicateAdditionalAccessoryType": "Duplicated Additional Accessory Type",
+        "duplicateAskAdditionalAccessoryType": "Type of additional accessory already registred.",
+        "duplicateFuelType": "Duplicated Fuel Type",
+        "duplicateAskFuelType": "Type of fuel already registred.",
+        "duplicateOperationType": "Duplicated Operation Type",
+        "duplicateAskOperationType": "Type of operation already registred.",
+        "duplicateTModelos": "Duplicated Model Type",
+        "duplicateAskTModelos": "Type of model already registred.",
+        "duplicateBrandType": "Duplicated Brand",
+        "duplicateAskBrandType": "Brand already registred.",
+        "duplicateDepartmentType": "Duplicated Department Type",
+        "duplicateAskDepartmentType": "Type of department already registred.",
+        "duplicateProgrammingType": "Duplicated Programming Type",
+        "duplicateAskProgrammingType": "Type of programming already registred.",
+        "duplicateCountry": "Duplicated Countries",
+        "duplicateAskCountry": "country already registred.",
+        "duplicateState": "Duplicated Estates",
+        "duplicateAskState": "estate already registred.",
+        "duplicateMunicipality": "Duplicated Municipalities",
+        "duplicateAskMunicipality": "municipality already registred.",
+        "duplicateMPagos": "Duplicated payment methods",
+        "duplicateAskMPagos": "payment method already registred.",
+        "duplicateFPagos": "Duplicated payment methods",
+        "duplicateAskFPagos": "payment method already registred.",
+        "duplicateBancos": "Duplicated banks",
+        "duplicateAskBancos": "bank already registred.",
+        "duplicateCFDI": "Duplicated CFDI's",
+        "duplicateAskCFDI": "CFDI already registred.",
+        "duplicatePersonalType": "Duplicated Personnel Categories",
+        "duplicateAskPersonalType": "Type of category already registred.",
+        "duplicateMaintenanceReasonType": "Duplicated Maintenance Types",
+        "duplicateAskMaintenanceReasonType": "Type of maintenance already registred.",
+        "duplicateTRMantenimiento": "Duplicated Maintenance Reasons",
+        "duplicateAskTRMantenimiento": "Type of maintenance reason already registred.",
+        "duplicateRouteType": "Duplicated Route",
+        "duplicateAskRouteType": "Types of route already registred.",
+        "duplicateRepresentante": "Duplicate Representative",
+        "duplicateAskRepresentante": "Type of representative already registered.",
+        "duplicatePatios": "Duplicated Patios",
+        "duplicateAskPatios": "Patio already registred."
+      },
+      "fpagosCatalog": {
+        "headingNew": "New way to pay",
+        "headingEdit": "Edit way to pay",
+        "headingDetails": "Details",
+        "formControl": {
+          "clave": "Key",
+          "claveTexto": "Key Text",
+          "description": "Description",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "fpagosSavedTitle": "Way to pay saved",
+        "fpagosEditedTitle": "Way to pay edited",
+        "fpagosDeletedTitle": "Way to pay deleted",
+        "fpagosSuccessMessage": "The way to pay has been saved successfully"
+      },
+      "mpagosCatalog": {
+        "headingNew": "New payment method",
+        "headingEdit": "Edit payment method",
+        "headingDetails": "Details",
+        "formControl": {
+          "clave": "Key",
+          "description": "Payment method",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "mpagosSavedTitle": "Payment method saved",
+        "mpagosEditedTitle": "Payment method edited",
+        "mpagosDeletedTitle": "Payment method deleted",
+        "mpagosSuccessMessage": "The payment method has been saved successfully"
+      },
+      "cfdiCatalog": {
+        "headingNew": "New CFDI",
+        "headingEdit": "Edit CFDI",
+        "headingDetails": "Details",
+        "formControl": {
+          "clave": "Clave CFDI",
+          "description": "CFDI",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "cfdiSavedTitle": "CFDI saved",
+        "cfdiEditedTitle": "CFDI edited",
+        "cfdiDeletedTitle": "CFDI deleted",
+        "cfdiSuccessMessage": "The CFDI has been saved successfully"
+      },
+      "bank": {
+        "headingNew": "New bank",
+        "headingEdit": "Edit bank",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Bank",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "savedBankTitle": "Bank saved",
+        "bancoEditedTitle": "Bank edited",
+        "bancoDeletedTitle": "Bank deleted",
+        "successBankMessage": "The bank has been saved successfully"
+      },
+      "commercialBusiness": {
+        "headingNew": "New commercial business",
+        "headingEdit": "Edit commercial business",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Commercial business",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "commercialBusinessSavedTitle": "Commercial business saved",
+        "commercialBusinessEditedTitle": "Commercial business edited",
+        "commercialBusinessDeletedTitle": "Commercial business deleted",
+        "commercialBusinessSuccessMessage": "El commercial business has been saved successfully"
+      },
+      "country": {
+        "headingNew": "New country",
+        "headingEdit": "Edit country",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Country",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "countrySavedTitle": "Country saved",
+        "countryEditedTitle": "Country edited",
+        "countryDeletedTitle": "Country Deleted",
+        "countrySuccessMessage": "The country has been saved successfully"
+      },
+      "state": {
+        "headingNew": "New estate",
+        "headingEdit": "Edit estate",
+        "headingDetails": "Details",
+        "formControl": {
+          "country": "Country",
+          "description": "Estate",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "stateSavedTitle": "Estate saved",
+        "stateEditedTitle": "Estate edited",
+        "stateDeletedTitle": "Estate Deleted",
+        "stateSuccessMessage": "The estate has been saved successfully"
+      },
+      "municipality": {
+        "headingNew": "New Township",
+        "headingEdit": "Edit Township",
+        "headingDetails": "Details",
+        "formControl": {
+          "country": "Country",
+          "estate": "Estate",
+          "description": "Township",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "municipalitySavedTitle": "Township saved",
+        "municipioEditedTitle": "Township edited",
+        "municipioDeletedTitle": "Township Deleted",
+        "municipalitySuccessMessage": "The Township has been saved successfully"
+      },
+      "fuelType": {
+        "headingNew": "New Fuel",
+        "headingEdit": "Edit Fuel",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Fuel",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "fuelSavedTitle": "Fuel saved",
+        "fuelEditedTitle": "Fuel edited",
+        "fuelDeletedTitle": "Fuel deleted",
+        "fuelSuccessMessage": "The fuel has been saved successfully"
+      },
+      "unitType": {
+        "headingNew": "New Unit type",
+        "headingEdit": "Edit Unit type",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Unit type",
+          "unidad": "Unit",
+          "img": "Select Image",
+          "imgSelect": "Select",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "unitTypeSavedTitle": "Unit type saved",
+        "unitTypeEditedTitle": "Unit type edited",
+        "unitTypeDeletedTitle": "Unit type deleted",
+        "unitTypeSuccessMessage": "Unit type has been saved successfully"
+      },
+      "status": {
+        "headingNew": "New Type of status",
+        "headingEdit": "Edit Type of status",
+        "headingDetails": "Details",
+        "formControl": {
+          "value_status": "Value",
+          "description": "Type of status",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "statusSavedTitle": "Type of status saved",
+        "statusEditedTitle": "Type of status edited",
+        "statusDeletedTitle": "Type of status deleted",
+        "statusSuccessMessage": "Type of status has been saved successfully"
+      },
+      "trailerCatalog": {
+        "headingNew": "New Type of trailer",
+        "headingEdit": "Edit Type of trailer",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of trailer",
+          "tipo": "Trailer",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "trailerSavedTitle": "Type of trailer saved",
+        "remolqueEditedTitle": "Type of trailer edited",
+        "remolqueDeletedTitle": "Type of trailer deleted",
+        "trailerSuccessMessage": "Type of trailer has been saved successfully"
+      },
+      "motiveType": {
+        "headingNew": "New Type of motive",
+        "headingEdit": "Edit Type of motive",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of motive",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "motiveTypeSavedTitle": "Type of motive saved",
+        "motiveTypeEditedTitle": "Type of motive edited",
+        "motiveTypeDeletedTitle": "Type of motive deleted",
+        "motiveTypeSuccessMessage": "Type of motive has been saved successfully"
+      },
+      "lineTypeCatalog": {
+        "headingNew": "New Type of line",
+        "headingEdit": "Edit Type of line",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of line",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "lineTypeSavedTitle": "Type of line saved",
+        "lineTypeEditedTitle": "Type of line edited",
+        "lineTypeDeletedTitle": "Type of line deleted",
+        "lineTypeSuccessMessage": "Type of line has been saved successfully"
+      },
+      "fleetType": {
+        "headingNew": "New Fleet type",
+        "headingEdit": "Edit Fleet type",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Fleet type",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "fleetTypeSavedTitle": "Fleet type saved",
+        "fleetTypeEditedTitle": "Fleet type edited",
+        "fleetTypeDeletedTitle": "Fleet type deleted",
+        "fleetTypeSuccessMessage": "Fleet type has been saved successfully"
+      },
+      "conceptType": {
+        "headingNew": "New Type of concept",
+        "headingEdit": "Edit Type of concept",
+        "headingDetails": "Details",
+        "formControl": {
+          "noconcepto": "No. concept",
+          "description": "Description",
+          "tipo": "Ascertainable?",
+          "iva": "% VAT",
+          "retencion": "% Retention",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "conceptosSavedTitle": "Type of concept saved",
+        "conceptosEditedTitle": "Type of concept edited",
+        "conceptosDeletedTitle": "Type of concept deleted",
+        "conceptosSuccessMessage": "Type of concept has been saved successfully"
+      },
+      "additionalAccessoryType": {
+        "headingNew": "New Type of additional accessories",
+        "headingEdit": "Edit Type of additional accessories",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of additional accessories",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "additionalAccessoryTypeSavedTitle": "Type of additional accessories saved",
+        "additionalAccessoryTypeEditedTitle": "Type of additional accessories edited",
+        "additionalAccessoryTypeDeletedTitle": "Type of additional accessories deleted",
+        "additionalAccessoryTypeSuccessMessage": "Type of additional accessories has been saved successfully"
+      },
+      "operationType": {
+        "headingNew": "New Type of operation",
+        "headingEdit": "Edit Type of operation",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of operation",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "operationTypeSavedTitle": "Type of operation saved",
+        "operationTypeEditedTitle": "Type of operation edited",
+        "operationTypeDeletedTitle": "Type of operation deleted",
+        "operationTypeSuccessMessage": "Type of operation has been saved successfully"
+      },
+      "modelTypeCatalog": {
+        "headingNew": "New Type of model",
+        "headingEdit": "Edit Type of model",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of model",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "modelTypeSavedTitle": "Type of model saved",
+        "modelTypeEditedTitle": "Type of model edited",
+        "modelTypeDeletedTitle": "Type of model deleted",
+        "modelTypeSuccessMessage": "Type of model has been saved successfully"
+      },
+      "brandType": {
+        "headingNew": "New Brand",
+        "headingEdit": "Edit marca",
+        "headingDetails": "Detalles",
+        "formControl": {
+          "description": "Brand",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "brandTypeSavedTitle": "Brand saved",
+        "brandTypeEditedTitle": "Brand edited",
+        "brandTypeDeletedTitle": "Brand deleted",
+        "brandTypeSuccessMessage": "Brand has been saved successfully"
+      },
+      "departmentType": {
+        "headingNew": "New Department",
+        "headingEdit": "Edit Department",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Department",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "departmentTypeSavedTitle": "Department saved",
+        "departmentTypeEditedTitle": "Department edited",
+        "departmentTypeDeletedTitle": "Department deleted",
+        "departmentTypeSuccessMessage": "Department has been saved successfully"
+      },
+      "programmingType": {
+        "headingNew": "New Type of programming",
+        "headingEdit": "Edit Type of programming",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Type of programming",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "programmingTypeSavedTitle": "Type of programming saved",
+        "programmingTypeEditedTitle": "Type of programming edited",
+        "programmingTypeDeletedTitle": "Type of programming deleted",
+        "programmingTypeSuccessMessage": "Type of programming has been saved successfully"
+      },
+      "personalType": {
+        "headingNew": "New Staff category",
+        "headingEdit": "Edit Staff category",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Staff category",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "personalTypeSavedTitle": "Staff category saved",
+        "personalTypeEditedTitle": "Staff category edited",
+        "personalTypeDeletedTitle": "Staff category deleted",
+        "personalTypeSuccessMessage": "Staff category has been saved successfully"
+      },
+      "maintenanceType": {
+        "headingNew": "New Types of Maintenance",
+        "headingEdit": "Edit Types of Maintenance",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Types of Maintenance",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "maintenanceTypeSavedTitle": "Types of Maintenance saved",
+        "maintenanceTypeEditedTitle": "Types of Maintenance edited",
+        "maintenanceTypeDeletedTitle": "Types of Maintenance deleted",
+        "maintenanceTypeSuccessMessage": "Types of Maintenance has been saved successfully"
+      },
+      "maintenanceReasonTypeCatalog": {
+        "headingNew": "New Maintenance reason",
+        "headingEdit": "Edit Maintenance reason",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Maintenance reason",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "maintenanceReasonTypeSavedTitle": "Maintenance reason saved",
+        "maintenanceReasonTypeEditedTitle": "Maintenance reason edited",
+        "maintenanceReasonTypeDeletedTitle": "Maintenance reason deleted",
+        "maintenanceReasonTypeSuccessMessage": "Maintenance reason has been saved successfully"
+      },
+      "routeType": {
+        "headingNew": "New Route",
+        "headingEdit": "Edit Route",
+        "headingDetails": "Details",
+        "formControl": {
+          "tipo": "Type of route",
+          "description": "Route",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "rutasSavedTitle": "Route saved",
+        "rutasEditedTitle": "Route edited",
+        "rutasDeletedTitle": "Route deleted",
+        "rutasSuccessMessage": "Route has been saved successfully"
+      },
+      "representativeType": {
+        "headingNew": "New type of representative",
+        "headingEdit": "Edit Representative Type",
+        "headingDetails": "Details",
+        "formControl": {
+          "tipo": "Type of representative",
+          "description": "Type of representative",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "representativeSavedTitle": "The type of representative saved",
+        "representativeEditedTitle": "The type of representative edited",
+        "representativeDeletedTitle": "The type of representative removed",
+        "representativeSuccessMessage": "The type of representative has been saved correctly"
+      },
+      "patioCatalog": {
+        "headingNew": "New Patio",
+        "headingEdit": "Edit Patio",
+        "headingDetails": "Details",
+        "formControl": {
+          "description": "Patio",
+          "direccion": "Address",
+          "save": "Save",
+          "cancel": "Cancel"
+        },
+        "patioSavedTitle": "Patio saved",
+        "patioEditedTitle": "Patio edited",
+        "patioDeletedTitle": "Patio deleted",
+        "patioSuccessMessage": "Patio has been saved successfully"
+      }
+    }
+  },
+  "components": {
+    "general": {
+      "closeEditionP": "Profile",
+      "closeEditionU": "Users",
+      "deleteUsers": "Delete Users",
+      "deleteProfile": "Delete profile",
+      "sendInvitation": "Resend the Invitation",
+      "updateProfile": "Update Profile",
+      "chgPasswordProfile": "Update Password",
+      "actions": "Actions",
+      "editSel": "Edit Selected Items",
+      "addElement": "New item",
+      "refresh": "Reload Content",
+      "close": "Close",
+      "inviteSignup": "Invite a user to sign up",
+      "addEmail": "Introduce a valid email to send an invitation",
+      "send": "Send",
+      "sent": "Invitation has been sent",
+      "expireTime": "Will expire in 12 hours",
+      "dateRange": "Range",
+      "clear": "Clear"
+    },
+    "fileinput": {
+      "drop": {
+        "single": "Drop file here",
+        "multiple": "Drop files here"
+      },
+      "click": "or click here"
+    },
+    "table": {
+      "addElements": "Add elements",
+      "sortElements": "Sort items",
+      "addElement": "New item",
+      "addFromFile": "File upload",
+      "sendInvitation": "Send invitation",
+      "refresh": "Reload Content",
+      "delSel": "Delete selected items",
+      "filters": {
+        "addFilters": "Add Filters",
+        "applyFilters": "Apply Filters",
+        "clearFilters": "Clean Filters"
+      },
+      "columns": {
+        "showColumns": "Show columns"
+      },
+      "showEntries": "{{value}} record(s)",
+      "editOne": "Update",
+      "deleteOne": "Delete",
+      "show": "Show",
+      "entries": "entries",
+      "all": "all",
+      "search": "Search records",
+      "noItems": "No items has been found",
+      "total": "{{ value }} / {{ total }} total",
+      "pagination": {
+        "first": "First",
+        "last": "Last",
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "list": {
+      "noItems": "No items has been found"
+    },
+    "dataDocument": {
+      "uploadDoc": "Upload document",
+      "history": "History",
+      "file": "File"
+    },
+    "footer": {
+      "us": "Who we are?",
+      "contact": "Contact us",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "brand": "SystemCore",
+      "developed": "Developed by",
+      "developedBy": "Grupo DECA"
+    },
+    "navbar": {
+      "title": {
+        "desktop": "Welcome to Dell'Aria's Admin Platform",
+        "mobile": "Welcome to Mobile Dell'Aria's Admin Platform"
+      }
+    },
+    "profile": {
+      "titleView": "Account",
+      "title": "User edition",
+      "newtitleView": "New User",
+      "titleDeleteUsers": "Delete User's",
+      "errMessageDeleteUsers": "Could not delete user",
+      "pictureForm": {
+        "title": "Picture",
+        "labels": {
+          "upload": "Select Image",
+          "change": "Change",
+          "delete": "Delete",
+          "save": "Save"
+        }
+      },
+      "createFirst": "You need to create a user first before upload a profila picture",
+      "profileForm": {
+        "title": "Details",
+        "changePasswordTitle": "Change password",
+        "labels": {
+          "name": "Name",
+          "lastname": "Lastname",
+          "surname": "Surname",
+          "username": "Username",
+          "birthdate": "Birthdate",
+          "email": "Email",
+          "phone": "Phone number",
+          "profile": "Profile",
+          "userSecurity": "Security profile",
+          "password": "Password",
+          "passwordConfirm": "Confirm password",
+          "save": "Save"
+        },
+        "errors": {
+          "required": "This field is required",
+          "password": "Use a minimum 8 characters and make sure both passwords match",
+          "phone": "Please use the right format: 123-456-7890",
+          "birthdate": "Please use the right format: dd-mm-yyyy",
+          "passwordConfirm": "Passwords do not match",
+          "onlyLetters": "Only letters and spaces are allowed"
+        }
+      },
+      "adminView": {
+        "title": "Admin details",
+        "labels": {
+          "role": "Role",
+          "disabled": "Enabled user",
+          "rootUser": "Root user",
+          "adminUser": "Admin user"
+        },
+        "permissions": "Permissions"
+      },
+      "alerts": {
+        "imgValidation": {
+          "title": "Invalid extension",
+          "message": "Need to select a valid image file"
+        },
+        "profileUpdated": {
+          "title": "Profile updated"
+        },
+        "profileCreated": {
+          "title": "Profile created",
+          "message": "Save the password for the user"
+        },
+        "profilePictureUpdated": {
+          "title": "Profile picture updated"
+        }
+      }
+    },
+    "profileR": {
+      "username": "Username",
+      "birthdate": "Birthdate",
+      "email": "Email",
+      "phone": "Phone number",
+      "adminDetails": "Admin details",
+      "role": "Role",
+      "rootUser": "Root user",
+      "disabled": "Disabled",
+      "permissions": "Permissions",
+      "adminUser": "User admin",
+      "adminView": {
+        "labels": {
+          "role": "Role",
+          "disabled": "User Disabled"
+        }
+      }
+    },
+    "dataActions": {
+      "delete": {
+        "deleteSelect": "Delete Records",
+        "delSel": "Delete selected items",
+        "delAsk": "Are you sure you want to delete the selected records?",
+        "deleted": "The records have been deleted",
+        "close": "Cancelar"
+      },
+      "actions": "Actions",
+      "editSel": "Edit Selected Items",
+      "addElement": "New item",
+      "refresh": "Reload Content",
+      "close": "Close",
+      "inviteSignup": "Invite a user to sign up",
+      "addEmail": "Introduce a valid email to send an invitation",
+      "send": "Send",
+      "sent": "Invitation has been sent",
+      "expireTime": "Will expire in 12 hours"
+    },
+    "dataSegments": {
+      "add": "Add Segment",
+      "select": "Select Segment",
+      "delete": {
+        "title": "Remove Filter",
+        "question": "Are you sure you want to remove this filter?"
+      },
+      "name": "Segment name",
+      "close": {
+        "title": "Are you sure?",
+        "question": "All fields will be erased"
+      },
+      "save_apply": "Save and apply filter",
+      "update_apply": "Update and apply filter",
+      "apply": "Apply filter",
+      "clean": "Clean all filters",
+      "applied": {
+        "remove": "Remove applied fitler",
+        "save": "Save applied filter"
+      }
+    },
+    "checkboxSelection": {
+      "selectAll": "Select all items",
+      "unselectAll": "Unselect all items"
+    },
+    "accounts": {
+      "title": {
+        "new": "Add bank account",
+        "edit": "Edit bank account "
+      },
+      "form": {
+        "account": "Bank account",
+        "bank": "Bank"
+      },
+      "formErrors": {
+        "required": "This field is required",
+        "lengthCodeError": "This field must have 18 characters",
+        "OnlyNumbers": "Only numbers"
+      },
+      "columns": {
+        "account": "Bank account",
+        "bank": "Bank"
+      },
+      "actions": {
+        "delete": {
+          "title": "Delete bank account",
+          "question": "Do you want to delete the bank account?"
+        }
+      }
+    },
+    "responsibles": {
+      "title": {
+        "new": "Add responsible",
+        "edit": "Edit responsible"
+      },
+      "form": {
+        "job": "Job",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "columns": {
+        "job": "Job",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "actions": {
+        "delete": {
+          "title": "Delete responsible ",
+          "question": "Do you want to eliminate the person in charge?"
+        }
+      }
+    }
+  },
+  "interceptors": {
+    "auth": {
+      "title": "No connection",
+      "message": "Cannot reach server"
+    }
+  },
+  "services": {
+    "alerts": {
+      "input": {
+        "cancelButtonText": "Cancel",
+        "cannotEmpty": "Input can't be emmpty"
+      },
+      "error": {
+        "title": "Error",
+        "message": "Please, try again"
+      },
+      "close": {
+        "title": "Close",
+        "question": "Are you sure close this window?"
+      },
+      "success": {
+        "title": "Information",
+        "message": "Successful operation"
+      }
+    },
+    "user": {
+      "httpStatus0": {
+        "title": "No connection",
+        "message": "Cannot reach server"
+      }
+    },
+    "utilities": {
+      "residential": "Residential",
+      "postalCode": "Postal code"
+    }
+  },
+  "api": {
+    "response": {
+      "code": {
+        "100": {
+          "title": "Wrong data",
+          "message": "Make sure to include a valid user and password"
+        },
+        "101": {
+          "title": "Maximum Attempts",
+          "message": "You have reached the maximum number of attempts allowed. Please try again in {{minutes}} minutes"
+        },
+        "102": {
+          "title": "Multiple accounts",
+          "message": "Select an account to continue"
+        },
+        "103": {
+          "title": "Simultaneous users",
+          "message": "You cannot connect at this time, the account has reached the maximum number of users connected simultaneously"
+        },
+        "104": {
+          "title": "Error",
+          "message": "Error creating user session"
+        },
+        "105": {
+          "title": "Incomplete data",
+          "message": "Make sure you're sending user and password"
+        },
+        "106": {
+          "title": "Not found",
+          "message": "The user you're tryng to get doesn't exists"
+        },
+        "107": {
+          "title": "Invalid email",
+          "message": "Please try to use a valid email"
+        },
+        "108": {
+          "title": "Expired Token",
+          "message": "Request a new token to the administrator"
+        },
+        "109": {
+          "title": "Invalid password",
+          "message": "The password and password confirmation have issues. It could not match or don't have the minimun {{minLength}} length"
+        },
+        "110": {
+          "title": "Not found",
+          "message": "The user you're trying to update doesn't exists"
+        },
+        "111": {
+          "title": "Error",
+          "message": "Error in create docker"
+        },
+        "112": {
+          "title": "Invalid password",
+          "message": "Make sure your password and confirmatation are the same and is {{minLength}} lenght at least"
+        },
+        "113": {
+          "title": "Not found",
+          "message": "The user you're trying to delete, doesn't exixts"
+        },
+        "114": {
+          "title": "Logout",
+          "message": "The session could not be deleted"
+        },
+        "115": {
+          "title": "Logout",
+          "message": "Make sure you're sending token"
+        },
+        "116": {
+          "title": "Email in use",
+          "message": "The email you're trying to use has been taken"
+        },
+        "117": {
+          "title": "Update User",
+          "message": "User updated successfully"
+        },
+        "118": {
+          "title": "Update User",
+          "message": "There was a problem updating the user"
+        },
+        "119": {
+          "title": "Email in use",
+          "message": "The email should be different from the current"
+        },
+        "120": {
+          "title": "Error",
+          "message": "Try Again"
+        },
+        "121": {
+          "title": "Expired Credentials",
+          "message": "Log in again"
+        },
+        "122": {
+          "title": "Active Token",
+          "message": "The token cannot be updated yet"
+        },
+        "123": {
+          "title": "URL used",
+          "message": "Request a new url to generate your password"
+        },
+        "124": {
+          "title": "Expired Token",
+          "message": "Request a new url to generate your password"
+        },
+        "125": {
+          "title": "Invalid information",
+          "message": "The information you entered is incorrect. Please validate the data or request a password reset again"
+        },
+        "126": {
+          "title": "Send Error",
+          "message": "There was an error sending the invitation to the user, please try again"
+        },
+        "200": {
+          "title": "Not found",
+          "message": "The account you`re trying to delete, doesn't exixts"
+        },
+        "201": {
+          "title": "Not found",
+          "message": "The account you're tryng to get doesn't exists"
+        },
+        "202": {
+          "title": "Account name in use",
+          "message": "The account you're trying to use has been taken"
+        },
+        "203": {
+          "title": "Not found",
+          "message": "The Account you're trying to update doesn't exists"
+        },
+        "300": {
+          "title": "Not found",
+          "message": "The database you're trying to delete, doesn't exixts"
+        },
+        "301": {
+          "title": "Not found",
+          "message": "The database you're tryng to get doesn't exists"
+        },
+        "302": {
+          "title": "Username in use",
+          "message": "The username you're trying to use has been taken"
+        },
+        "303": {
+          "title": "Not found",
+          "message": "The Database you're trying to update doesn't exists"
+        },
+        "304": {
+          "title": "ECONNREFUSED",
+          "message": "The account you wish to connect to is not accessible"
+        },
+        "305": {
+          "title": "Code used",
+          "message": "The password change code has already been used before"
+        },
+        "306": {
+          "title": "URL used",
+          "message": "Request a new url to generate your password"
+        },
+        "307": {
+          "title": "Not found",
+          "message": "The code you're tryng to get doesn't exists"
+        },
+        "999": {
+          "title": "Error",
+          "message": "An unexpected error occurred, please try again"
+        },
+        "5000": {
+          "title": "User not found",
+          "message": "The user who owned the segment was not found"
+        },
+        "5001": {
+          "title": "Segment not found",
+          "message": "The segment you are trying to delete does not exist or you do not have permission to delete it"
+        },
+        "5002": {
+          "title": "Segment not found",
+          "message": "The segment you are trying to retrieve does not exist or does not have permission to view it"
+        },
+        "5003": {
+          "title": "Segment not found",
+          "message": "The segment you are trying to retrieve does not exist or does not have permission to view it"
+        },
+        "5004": {
+          "title": "Profile in use",
+          "message": "The profile you are trying to delete is assigned to one or more users"
+        },
+        "5100": {
+          "title": "Columns not found",
+          "message": "The module you are trying to access does not have configured columns"
+        },
+        "5200": {
+          "title": "Profile duplicated",
+          "message": "The profile name is already in use"
+        },
+        "5201": {
+          "title": "Profile not found",
+          "message": "The profile you are trying to update does not exist or does not have permission to view it"
+        },
+        "5202": {
+          "title": "Profile not found",
+          "message": "The profile you are trying to delete does not exist or you do not have permission to delete it"
+        },
+        "5203": {
+          "title": "Profile not found",
+          "message": "The profile you are trying to retrieve does not exist or does not have permission to view it"
+        },
+        "5300": {
+          "title": "Seguridad de usuario duplicado",
+          "message": "El nombre para la seguridad de usuario ya está en uso."
+        },
+        "5301": {
+          "title": "Segurity not found",
+          "message": "The segurity you are trying to update does not exist or does not have permission to view it"
+        },
+        "5302": {
+          "title": "Security not found",
+          "message": "The security you are trying to delete does not exist or you do not have permission to delete it"
+        },
+        "5303": {
+          "title": "Security not found",
+          "message": "The security you are trying to retrieve does not exist or does not have permission to view it"
+        },
+        "5304": {
+          "title": "No access",
+          "message": "You are not allowed to access at this time"
+        },
+        "5305": {
+          "title": "Security profile in use",
+          "message": "The security profile you are trying to delete is assigned to one or more users"
+        },
+        "5306": {
+          "title": "Estado duplicado",
+          "message": "El estado que intentó registrar está en uso."
+        },
+        "5307": {
+          "title": "Delegación duplicada",
+          "message": "La delegación intenta registrarse está en uso."
+        },
+        "5308": {
+          "title": "Municipio duplicado",
+          "message": "El municipio intenta registrarse está en uso."
+        },
+        "5309": {
+          "title": "País duplicado",
+          "message": "El país que intentó registrarse está en uso.."
+        },
+        "5310": {
+          "title": "Registro no encontrado",
+          "message": "El país que intentó registrarse está en uso.."
+        },
+        "5311": {
+          "title": "Catalogos",
+          "message": "El catalogo que intentó registrar está en uso.."
+        },
+        "5312": {
+          "title": "Country in use",
+          "message": "The country you are trying to delete is assigned to one or more records"
+        },
+        "5313": {
+          "title": "Estate in use",
+          "message": "The estate you are trying to delete is assigned to one or more records"
+        },
+        "5400": {
+          "title": "Overlap conflict",
+          "message": "The event cannot be created. Please check the schedules."
+        },
+        "5402": {
+          "title": "Overlap conflict",
+          "message": "Order #{{noOrder}} could not be allocated. Please check the schedules."
+        }
+      },
+      "default": {
+        "title": "Error",
+        "message": "Intente de nuevo"
+      }
+    }
+  }
+}

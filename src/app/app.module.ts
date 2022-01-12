@@ -15,9 +15,16 @@ import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { NgxMaskModule } from "ngx-mask";
-import { TranslateModule } from "@ngx-translate/core";
+import { TranslateLoader, TranslateModule, TranslateService } from "@ngx-translate/core";
+import { from, Observable } from "rxjs";
+import { environment } from "@env/environment";
+import { UtilitiesService } from "@services/utilities/utilities.service";
 
-
+export class WebpackTranslateLoader implements TranslateLoader {
+  getTranslation(lang: string): Observable<any> {
+    return from(import(`../translations/${lang}.json`));
+  }
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +42,22 @@ import { TranslateModule } from "@ngx-translate/core";
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    TranslateModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useClass: WebpackTranslateLoader,
+      },
+    }),
     NgxMaskModule,
   ],
-  providers: [],
+  providers: [
+    UtilitiesService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private translateService: TranslateService) {
+    this.translateService.addLangs(environment.langs);
+    this.translateService.setDefaultLang(environment.langs[0]);
+  }
+}

@@ -8,4 +8,6 @@ export const environment = {
   password: {
     minLength: 8,
   },
+  api: "http://localhost/examGilaSoftware/",
+  langs: ["es", "en"],
 };
