@@ -2,30 +2,42 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title">Lista de vehiculos</h4>
+        <div class="row">
+          <div class="col-4">
+            <h4 class="card-title">Lista de vehiculos</h4>
+          </div>
+          <div class="col-8 w-100 justify-content-end text-right">
+            <div class="row">
+              <div class="col-12">
+                <button class="btn btn-sm btn-info btn-icon"><i class="fa fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body">
         <div class="table-responsive">
           <table class="table">
             <thead class=" text-primary">
-              <th>
+              <th scope="col">
                 Nombre
               </th>
-              <th>
+              <th scope="col">
                 Tipo
               </th>
-              <th>
+              <th scope="col">
                 # Llantas
               </th>
-              <th>
+              <th scope="col">
                 HP
               </th>
-              <th>
+              <th scope="col">
                 Motor
               </th>
-              <th>
+              <th scope="col">
                 Color
               </th>
+              <th ></th>
             </thead>
             <tbody>
               <tr *ngFor="let car of cars">
@@ -35,6 +47,15 @@
                 <td>{{car.enginePower}}</td>
                 <td>{{car.motor}}</td>
                 <td>{{car.color}}</td>
+                <td>
+                  <div class="col-xs-3 text-right">
+                    <button class="btn btn-sm btn-info btn-icon"><i class="fa fa-eye"></i></button>
+                    &nbsp;
+                    <button class="btn btn-sm btn-primary btn-icon"><i class="fa fa-edit"></i></button>
+                    &nbsp;
+                    <button class="btn btn-sm btn-danger btn-icon"><i class="fa fa-trash"></i></button>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
