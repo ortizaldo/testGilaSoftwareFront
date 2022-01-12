@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-12">
-    <form [formGroup]="formGroup" #htmlForm="ngForm" class="form-horizontal">
+    <form [formGroup]="formGroup" #htmlForm="ngForm" class="form-horizontal" (validSubmit)="sendData()">
       <div class="row">
         <div class="col-md-4">
           <div class="form-group" [customErrorMessages]="customErrorMessages">
@@ -15,7 +15,7 @@
             <label class="col-form-label-sm text-gray ml-3">
               {{ "car.formControl.reels" | translate }} *:
             </label>
-            <input class="form-control" type="text" placeholder="" formControlName="reels" />
+            <input class="form-control" type="text" mask="0" placeholder="" formControlName="reels" />
           </div>
         </div>
         <div class="col-md-4">

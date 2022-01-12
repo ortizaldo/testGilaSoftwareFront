@@ -28,6 +28,7 @@ export class CarComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
+    private translator: TranslateService,
     private alerts: Alerts,
     private apiResponsesService: ApiResponses,
     private injector: Injector,
@@ -35,10 +36,10 @@ export class CarComponent implements OnInit {
     private httpService: HttpService<any>,
   ) {}
 	ngOnInit() {
-		this.getTCatalogs();
+		this.refresh();
 	}
 
-  getTCatalogs() {
+  refresh() {
     const dictonary: any = {};
 
     dictonary.cars = this.httpService.getMany("car/all");
@@ -59,6 +60,75 @@ export class CarComponent implements OnInit {
   }
 
   onAdd() {
+    const modal = this.openModal();
+    modal.componentInstance.title = "car.headingNew";
+    modal.result.then(
+      (result) => {
+        if (!result) {
+          return false;
+        }
+        result.value.typeCar = 3;
+        this.save(result.value);
+      },
+      () => {
+        // this.clearSelection();
+      }
+    );
+  }
+
+  onEdit(id: number) {
+    const modal = this.openModal(id);
+    modal.componentInstance.title = "car.headingEdit";
+    modal.result.then(
+      (result) => {
+        if (!result) {
+          return false;
+        }
+        result.value.idTypeCar = result.value.typeCar;
+        console.log('🚀 ~ CarComponent ~ onEdit ~ result.value', result.value);
+        this.save(result.value, id);
+      },
+      () => {
+        // this.clearSelection();
+      }
+    );
+  }
+
+  save(data: any, id?: number) {
+    if (id) {
+      this.httpService.updateOne("car", id, data).subscribe(
+        (d: any) => {
+          this.handlerSave();
+          // this.buttonSpinnerRef.hide();
+        },
+        (err) => {
+          const response = this.apiResponsesService.data(err);
+          this.alerts.error(response.title, response.message);
+        }
+      );
+    } else {
+      this.httpService.createOne("car", data).subscribe(
+      (d: any) => {
+        this.handlerSave();
+        // this.buttonSpinnerRef.hide();
+      },
+      (err) => {
+        const response = this.apiResponsesService.data(err);
+        this.alerts.error(response.title, response.message);
+      }
+    ); 
+    }
+  }
+
+  private handlerSave() {
+    this.alerts.success(
+      this.translator.instant("car.carSavedTitle"),
+      "toast-top-right",
+      this.translator.instant("car.menu"));
+    this.refresh();
+  }
+
+  openModal(_id?: number) {
     const modalRef = this.modalService.open(ModalContentComponent, {
       size: "lg",
       backdrop: "static",
@@ -73,21 +143,13 @@ export class CarComponent implements OnInit {
             provide: "contentData",
             useValue: {
               data: null,
+              _id: _id,
               isModal: true,
             },
           },
         ],
       }),
     });
-    modalRef.componentInstance.title = "car.headingNew";
-    modalRef.result.then(
-      (result) => {
-        // this.clearSelection();
-        // this.refresh();
-      },
-      () => {
-        // this.clearSelection();
-      }
-    );
+    return modalRef;
   }
 }

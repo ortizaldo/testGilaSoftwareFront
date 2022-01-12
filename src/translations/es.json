@@ -1,4 +1,48 @@
 {
+	"app": {
+		"welcome": "Bienvenido",
+		"newPassword": "Es necesario crear una nueva contraseña",
+		"password": "Contraseña",
+		"confirmPassword": "Confirmar contraeña",
+		"update": "Actualizar",
+		"success": "Éxito",
+		"updated": "Tu contraseña ha sido actualizada",
+		"passwordError": "Error en la contraseña",
+		"passwordErrorText": "Tu contraseña debe coincidir y ser mayor a 8 caracteres",
+		"deleted": "Eliminado exitosamente",
+		"duplicated": "Duplicado exitosamente",
+		"search": "Buscar",
+		"recordCreated": "Registro creado",
+		"recordUpdated": "Registro actualizado",
+		"noData": "Sin datos",
+		"buttons": {
+			"cancel": "Cancelar",
+			"ok": "Aceptar",
+			"close": "Cerrar",
+			"save": "Guardar",
+			"add": "Agregar",
+			"download": "Descargar"
+		},
+		"catalogs": {
+			"yesNo": {
+				"yes": "Si",
+				"no": "No"
+			},
+			"data": {
+				"notFound": "No existen datos",
+				"emptyMessageAutocompleteCatalogs": "No existen coincidencias"
+			}
+		},
+		"errors": {
+			"default": {
+				"title": "Error",
+				"message": "Ocurrió un error inesperado, por favor intente de nuevo"
+			}
+		},
+		"paginator": {
+			"dataView": "{first} - {last} de {totalRecords}"
+		}
+	},
 	"customErrors": {
 		"required": "Este campo es obligatorio",
 		"requiredShort": "Obligatorio",
@@ -8,7 +52,16 @@
 		"minLengthAccount": "Cantidad de caracteres invalido",
 		"economicNumber": "Este valor ya está registrado"
 	},
+	"api": {
+		"response": {
+			"default": {
+				"title": "Error",
+				"message": "Intente de nuevo"
+			}
+		}
+	},
 	"car": {
+		"menu": "Automovil",
 		"headingNew": "Nuevo automovil",
 		"headingEdit": "Editar automovil",
 		"headingList": "Lista de vehiculos",

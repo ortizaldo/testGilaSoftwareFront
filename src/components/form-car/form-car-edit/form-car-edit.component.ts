@@ -7,6 +7,9 @@ import { ApiResponses } from "@services/api-responses/api-responses.service";
 import { HttpService } from "@services/http/http.service";
 import { UtilitiesService } from "@services/utilities/utilities.service";
 import { ErrorMessage, FormValidationDirective } from "ng-bootstrap-form-validation";
+import * as _ from "underscore";
+import { forkJoin } from "rxjs";
+import { map } from "rxjs/operators";
 @Component({
   selector: "app-form-car-edit",
   templateUrl: "./form-car-edit.component.html",
@@ -18,6 +21,7 @@ export class FormCarEditComponent implements OnInit {
 
   @ViewChild("htmlForm") htmlFormRef: HTMLFormElement;
   @Input() data: any;
+  @Input() _id: any;
   @Output() validSubmit = new EventEmitter();
 
   formGroup: FormGroup;
@@ -32,9 +36,6 @@ export class FormCarEditComponent implements OnInit {
   loading = true;
 
   endpoint: string;
-
-  _id: string;
-
   customErrorMessages: ErrorMessage[] = [
     {
       error: "required",
@@ -74,7 +75,7 @@ export class FormCarEditComponent implements OnInit {
   constructor(
     private translator: TranslateService,
     private formBuilder: FormBuilder,
-    private http: HttpService<any>,
+    private httpService: HttpService<any>,
     private apiResponsesService: ApiResponses,
     public activeModal: NgbActiveModal,
     private alerts: Alerts,
@@ -94,10 +95,10 @@ export class FormCarEditComponent implements OnInit {
   }
 
   initialize(data: any) {
+    console.log('%cform-car-edit.component.ts line:100 this', 'color: #007acc;', this);
     this.createForm();
-    if (this.isEdit) {
-      this.formGroup.patchValue(this.data);
-      this.loading = true;
+    if (this._id) {
+      this.initData();
     } else {
       this.loading = true;
       if (this.data) {
@@ -106,11 +107,35 @@ export class FormCarEditComponent implements OnInit {
     }
   }
 
+  initData() {
+    const dictonary: any = {};
+
+    dictonary.cars = this.httpService.getMany("car/" + this._id);
+
+    if (!_.isEmpty(dictonary)) {
+      const subscriber = forkJoin(dictonary);
+
+      subscriber.pipe(map((c: any) => c)).subscribe(
+        (_data: any) => {
+          console.log('🚀 ~ FormCarEditComponent ~ initData ~ _data', _data.cars.data);
+          this.formGroup.patchValue(_data.cars.data);
+          this.loading = true;
+          // this.cars = _data.cars.data;
+				},
+        (err) => {
+          const response = this.apiResponsesService.data(err);
+          this.alerts.error(response.title, response.message);
+        }
+      );
+    }
+  }
+
   createForm() {
     this.formGroup = this.formBuilder.group({
       carName: new FormControl("", {
         validators: [Validators.required],
       }),
+      typeCar: new FormControl(""),
       reels: new FormControl("", {
         validators: [Validators.required],
       }),
@@ -124,6 +149,10 @@ export class FormCarEditComponent implements OnInit {
         validators: [Validators.required],
       }),
     });
+  }
+
+  sendData() {
+    this.activeModal.close(this.formGroup);
   }
 
   updateModel(event: any, key: string) {

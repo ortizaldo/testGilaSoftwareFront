@@ -12,6 +12,7 @@ import { CarComponent } from 'app/pages/car/car.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormCarModule } from 'components/form-car/form-car.module';
 import { UtilitiesService } from '@services/utilities/utilities.service';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { UtilitiesService } from '@services/utilities/utilities.service';
     FormsModule,
     NgbModule,
     TranslateModule,
-    FormCarModule
+    FormCarModule,
+    AngularSvgIconModule
   ],
   declarations: [
     UserComponent,

@@ -164,7 +164,16 @@ export class HttpService<T> extends HttpClient {
    * @returns {Promise}
    */
   createOne(endpoint: string, document: any) {
-    return super.post(`${endpoint}/new`, document);
+    let data = {
+      data: document
+    };
+    let headers = {'Content-Type':'application/json'};
+    let options = { headers: headers, method: "post"};
+    return super.post(
+      `${endpoint}/new`,
+      document,
+      options
+    );
   }
 
   /**
@@ -189,7 +198,7 @@ export class HttpService<T> extends HttpClient {
    * a static response.
    * @returns {Promise} Promise object represents the response.data (response is called "data" here) returned by the API.
    */
-  updateOne(endpoint: string, id: string, document: any) {
+  updateOne(endpoint: string, id: number, document: any) {
     return super.patch(`${endpoint}/${id}`, document);
   }
 
