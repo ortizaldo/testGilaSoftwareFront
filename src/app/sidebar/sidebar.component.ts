@@ -9,8 +9,8 @@ export interface RouteInfo {
 }
 // <i class="fas fa-car"></i>
 export const ROUTES: RouteInfo[] = [
-    { path: '/user',          title: 'Usuarios',      icon:'nc-single-02',  class: '' },
-    { path: '/table',         title: 'Automoviles',        icon:'nc-icon nc-bullet-list-67',    class: '' },
+    // { path: '/user',          title: 'Usuarios',      icon:'nc-single-02',  class: '' },
+    { path: '/car',         title: 'Automoviles',        icon:'nc-icon nc-bullet-list-67',    class: '' },
 ];
 
 @Component({

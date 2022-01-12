@@ -4,6 +4,8 @@ import { FormBuilder } from "@angular/forms";
 import { Router } from "@angular/router";
 import { NgbCalendar } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateService } from "@ngx-translate/core";
+import { Alerts } from "@services/alerts/alerts.service";
+import { ApiResponses } from "@services/api-responses/api-responses.service";
 import { forkJoin } from "rxjs";
 import { map } from "rxjs/operators";
 import { HttpService } from "services/http/http.service";
@@ -24,6 +26,8 @@ export class CarComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
+    private alerts: Alerts,
+    private apiResponsesService: ApiResponses,
     private httpService: HttpService<any>,
   ) {}
 	ngOnInit() {
@@ -41,11 +45,10 @@ export class CarComponent implements OnInit {
       subscriber.pipe(map((c: any) => c)).subscribe(
 				(_data: any) => {
           this.cars = _data.cars.data;
-          console.log('🚀 ~ CarComponent ~ getTCatalogs ~ this.cars', this.cars);
 				},
         (err) => {
-          // const response = this.apiResponsesService.data(err);
-          // this.alerts.error(response.title, response.message);
+          const response = this.apiResponsesService.data(err);
+          this.alerts.error(response.title, response.message);
         }
       );
     }

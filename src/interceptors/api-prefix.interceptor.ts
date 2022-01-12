@@ -20,7 +20,6 @@ export class ApiPrefixInterceptor implements HttpInterceptor {
 		if (!/^(http|https):/i.test(request.url)) {
 			const prefixUrl = this.apiPrefixUrl();
 			request = request.clone({ url: prefixUrl + request.url });
-      console.log('🚀 ~ ApiPrefixInterceptor ~ intercept ~ request', request);
 		}
 		return next.handle(request);
   }
