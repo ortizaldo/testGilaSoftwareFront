@@ -33,14 +33,14 @@ export class ModalContentComponent implements OnInit {
   ngOnInit() {}
 
   ngAfterViewInit() {
-    // if (this.contentComponent) {
-    //   const cmpRef: ComponentRef<any> = this.vcr.createComponent(
-    //     this.cfr.resolveComponentFactory(this.contentComponent)
-    //   );
-    //   for (let [key, value] of Object.entries(this.contentData)) {
-    //     cmpRef.instance[key] = value;
-    //   }
-    //   cmpRef.hostView.detectChanges();
-    // }
+    if (this.contentComponent) {
+      const cmpRef: ComponentRef<any> = this.vcr.createComponent(
+        this.cfr.resolveComponentFactory(this.contentComponent)
+      );
+      for (let [key, value] of Object.entries(this.contentData)) {
+        cmpRef.instance[key] = value;
+      }
+      cmpRef.hostView.detectChanges();
+    }
   }
 }

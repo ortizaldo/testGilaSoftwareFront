@@ -1,11 +1,12 @@
 import { HttpClient } from "@angular/common/http";
-import { ChangeDetectorRef, Component, OnInit } from "@angular/core";
+import { ChangeDetectorRef, Component, Injector, OnInit } from "@angular/core";
 import { FormBuilder } from "@angular/forms";
 import { Router } from "@angular/router";
-import { NgbCalendar } from "@ng-bootstrap/ng-bootstrap";
+import { NgbCalendar, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateService } from "@ngx-translate/core";
 import { Alerts } from "@services/alerts/alerts.service";
 import { ApiResponses } from "@services/api-responses/api-responses.service";
+import { ModalContentComponent } from "components/modal-content/modal-content/modal-content.component";
 import { forkJoin } from "rxjs";
 import { map } from "rxjs/operators";
 import { HttpService } from "services/http/http.service";
@@ -28,6 +29,8 @@ export class CarComponent implements OnInit {
     private formBuilder: FormBuilder,
     private alerts: Alerts,
     private apiResponsesService: ApiResponses,
+    private injector: Injector,
+    private modalService: NgbModal,
     private httpService: HttpService<any>,
   ) {}
 	ngOnInit() {
@@ -52,5 +55,38 @@ export class CarComponent implements OnInit {
         }
       );
     }
+  }
+
+  onAdd() {
+    const modalRef = this.modalService.open(ModalContentComponent, {
+      size: "lg",
+      backdrop: "static",
+      injector: Injector.create({
+        parent: this.injector,
+        providers: [
+          {
+            provide: "contentComponent",
+            useValue: null,
+          },
+          {
+            provide: "contentData",
+            useValue: {
+              travelOrders: event,
+              isModal: true,
+            },
+          },
+        ],
+      }),
+    });
+    modalRef.componentInstance.title = "menu.travelAssignment";
+    modalRef.result.then(
+      (result) => {
+        // this.clearSelection();
+        // this.refresh();
+      },
+      () => {
+        // this.clearSelection();
+      }
+    );
   }
 }

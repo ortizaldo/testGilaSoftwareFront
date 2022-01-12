@@ -19,6 +19,7 @@ import { TranslateLoader, TranslateModule, TranslateService } from "@ngx-transla
 import { from, Observable } from "rxjs";
 import { environment } from "@env/environment";
 import { UtilitiesService } from "@services/utilities/utilities.service";
+import { ModalContentModule } from "components/modal-content/modal-content.module";
 
 export class WebpackTranslateLoader implements TranslateLoader {
   getTranslation(lang: string): Observable<any> {
@@ -49,6 +50,7 @@ export class WebpackTranslateLoader implements TranslateLoader {
       },
     }),
     NgxMaskModule,
+    ModalContentModule
   ],
   providers: [
     UtilitiesService
