@@ -1,0 +1,9 @@
+<div class="modal-header">
+  <h4 class="modal-title mt-0">
+    {{ title | translate }}
+  </h4>
+  <app-modal-close-button [modal]="activeModal"></app-modal-close-button>
+</div>
+<div class="modal-body {{ bodyClass }}">
+  <div #content></div>
+</div>
