@@ -224,16 +224,9 @@ export class HttpService<T> extends HttpClient {
    * @description Make a DELETE api request to defined endpoint and adding id to the endpoint, so document will be deleted
    * @returns {Promise}
    */
-  deleteOne(endpoint: string, id: string, params: any = {}) {
+  deleteOne(endpoint: string, id: number) {
     const paramsStr = {};
-    for (const key in params) {
-      if (params.hasOwnProperty(key)) {
-        paramsStr[key] = JSON.stringify(params[key]);
-      }
-    }
-    return this.delete(`${endpoint}/${id}`, {
-      params: paramsStr,
-    });
+    return this.delete(`${endpoint}/${id}`);
   }
 
   /**

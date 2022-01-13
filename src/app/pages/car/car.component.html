@@ -57,15 +57,11 @@
                 <td>{{car.color}}</td>
                 <td>
                   <div class="col-xs-3 text-right">
-                    <button class="btn btn-neutral btn-info btn-icon">
-                      <svg-icon name="ver" class="svg-small mr-2"></svg-icon>
-                    </button>
-                    &nbsp;
                     <button class="btn btn-neutral btn-primary btn-icon" (click)="onEdit(car.idCar)">
                       <svg-icon name="edit" class="svg-small mr-2"></svg-icon>
                     </button>
                     &nbsp;
-                    <button class="btn btn-neutral btn-danger btn-icon">
+                    <button class="btn btn-neutral btn-danger btn-icon" (click)="deleteItems(car.idCar)">
                       <svg-icon name="trash" class="svg-small mr-2"></svg-icon>
                     </button>
                   </div>

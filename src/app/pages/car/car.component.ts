@@ -120,14 +120,6 @@ export class CarComponent implements OnInit {
     }
   }
 
-  private handlerSave() {
-    this.alerts.success(
-      this.translator.instant("car.carSavedTitle"),
-      "toast-top-right",
-      this.translator.instant("car.menu"));
-    this.refresh();
-  }
-
   openModal(_id?: number) {
     const modalRef = this.modalService.open(ModalContentComponent, {
       size: "lg",
@@ -152,4 +144,39 @@ export class CarComponent implements OnInit {
     });
     return modalRef;
   }
+
+  deleteItems(id?: number) {
+    let confirmation = "";
+      let title = "";
+      let body = "";
+      confirmation = "Registro eliminado";
+      title = "Eliminar registros";
+      body = "Desea eliminar este registro?";
+      const cancelText = "Cancelar";
+
+      this.alerts.confirmation(title, body, cancelText).then((response) => {
+      if (response.value) {
+        this.httpService.deleteOne("car", id).subscribe(
+          (res) => {
+            this.alerts.success(confirmation, "");
+            this.refresh();
+          },
+          (err) => {
+            const resp = this.apiResponsesService.data(err);
+            this.alerts.error(resp.title, resp.message);
+          }
+        );
+      }
+    });
+  }
+
+  private handlerSave() {
+    this.alerts.success(
+      this.translator.instant("car.carSavedTitle"),
+      "toast-top-right",
+      this.translator.instant("car.menu"));
+    this.refresh();
+  }
+
+  
 }
